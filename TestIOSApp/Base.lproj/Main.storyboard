@@ -22,15 +22,72 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Before Tax Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPr-J5-90N">
+                                <rect key="frame" x="11.999999999999993" y="89" width="123.33333333333331" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TZ3-30-Fk7">
+                                <rect key="frame" x="143.33333333333334" y="82.666666666666671" width="258.66666666666663" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sales Tax Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="liK-83-06H">
+                                <rect key="frame" x="12" y="140" width="111" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="4.7%" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4tU-3j-TxD">
+                                <rect key="frame" x="131" y="133.66666666666666" width="271" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="After Tax Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d54-Id-tBs">
+                                <rect key="frame" x="12" y="191" width="111" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z1x-fy-3tO">
+                                <rect key="frame" x="131" y="184.66666666666666" width="271" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsx-Oq-Eya">
+                                <rect key="frame" x="167.66666666666666" y="258.66666666666669" width="79" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="0.70683942544904865" blue="0.5951362001755065" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" systemColor="systemGroupedBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="liK-83-06H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="0eY-Xg-wW4"/>
+                            <constraint firstItem="4tU-3j-TxD" firstAttribute="leading" secondItem="liK-83-06H" secondAttribute="trailing" constant="8" id="1L0-wg-1bX"/>
+                            <constraint firstItem="gPr-J5-90N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="38U-dV-TCP"/>
                             <constraint firstItem="98g-U7-mct" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="6Lu-Bh-fgY"/>
                             <constraint firstItem="98g-U7-mct" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="72i-d7-CkJ"/>
+                            <constraint firstItem="4tU-3j-TxD" firstAttribute="centerY" secondItem="liK-83-06H" secondAttribute="centerY" id="8E9-L5-nb5"/>
+                            <constraint firstItem="z1x-fy-3tO" firstAttribute="centerY" secondItem="d54-Id-tBs" secondAttribute="centerY" id="BSL-tu-F0A"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="98g-U7-mct" secondAttribute="trailing" constant="12" id="FHU-XE-BlC"/>
+                            <constraint firstItem="liK-83-06H" firstAttribute="top" secondItem="gPr-J5-90N" secondAttribute="bottom" constant="30" id="FtP-eH-lsx"/>
+                            <constraint firstItem="d54-Id-tBs" firstAttribute="top" secondItem="liK-83-06H" secondAttribute="bottom" constant="30" id="P4H-AO-L9P"/>
+                            <constraint firstItem="gPr-J5-90N" firstAttribute="top" secondItem="98g-U7-mct" secondAttribute="bottom" constant="40" id="Sy3-ZS-aMs"/>
+                            <constraint firstItem="z1x-fy-3tO" firstAttribute="leading" secondItem="d54-Id-tBs" secondAttribute="trailing" constant="8" id="Uty-hO-tsc"/>
+                            <constraint firstItem="d54-Id-tBs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="WfB-5S-Dc6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TZ3-30-Fk7" secondAttribute="trailing" constant="12" id="Whq-gP-DeH"/>
+                            <constraint firstItem="qsx-Oq-Eya" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XL9-AE-tGf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4tU-3j-TxD" secondAttribute="trailing" constant="12" id="bue-I2-1ey"/>
+                            <constraint firstItem="TZ3-30-Fk7" firstAttribute="leading" secondItem="gPr-J5-90N" secondAttribute="trailing" constant="8" id="deG-WF-m6t"/>
                             <constraint firstItem="98g-U7-mct" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="dnC-iV-yj7"/>
+                            <constraint firstItem="TZ3-30-Fk7" firstAttribute="centerY" secondItem="gPr-J5-90N" secondAttribute="centerY" id="lRh-rY-H0e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z1x-fy-3tO" secondAttribute="trailing" constant="12" id="lT4-oQ-oKn"/>
+                            <constraint firstItem="qsx-Oq-Eya" firstAttribute="top" secondItem="z1x-fy-3tO" secondAttribute="bottom" constant="40" id="pIX-Nq-fcH"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -40,6 +97,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGroupedBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
